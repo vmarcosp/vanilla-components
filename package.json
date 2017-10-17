@@ -4,7 +4,7 @@
   "description": "A sample vanillajs component",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parallelshell \"babel src/js/index.js --watch --out-file dist/js/index.js\" \"lite-server\""
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,9 @@
   },
   "homepage": "https://github.com/vmarcosp/vanilla-components#readme",
   "devDependencies": {
-    "babel-preset-env": "^1.6.0"
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "lite-server": "^2.3.0",
+    "parallelshell": "^3.0.1"
   }
 }
